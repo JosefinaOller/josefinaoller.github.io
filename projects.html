@@ -16,6 +16,19 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Efecto de selección al pasar el mouse */
+            .card-link {
+                text-decoration: none; /* Elimina el subrayado del enlace */
+                color: inherit; /* Hereda el color del texto */
+                display: block; /* Hace que el enlace ocupe todo el espacio de la tarjeta */
+            }
+            .card-link:hover .card {
+                transform: scale(1.02); /* Escala la tarjeta al pasar el mouse */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
         <main class="flex-shrink-0">
@@ -42,27 +55,29 @@
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-md-12 col-sm-12">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-5">
-                                    <div class="d-flex flex-column flex-md-row align-items-center">
-                                        <!-- Imagen -->
-                                        <div class="me-md-4 mb-4 mb-md-0" style="flex-shrink: 0;">
-                                            <img class="img-fluid w-75 w-md-100" src="https://dummyimage.com/300x400/343a40/6c757d" alt="Mardel Puerto" style="height: auto;" />
-                                        </div>
-                                        <!-- Contenido de texto -->
-                                        <div class="flex-grow-1">
-                                            <h2 class="fw-bolder mb-4 fs-5 fs-md-3">Clima bot - Telegram Chatbot</h2>
-                                            <ul class="list-unstyled">
-                                                <li>
-                                                    <i class="bi bi-check-circle me-2" style="font-size: 1.2em; background: linear-gradient(to right, #6a11cb, #2575fc); -webkit-background-clip: text; color: transparent;"></i>
-                                                    <span style="font-size: 1.2rem; background: linear-gradient(to right, #6a11cb, #2575fc); -webkit-background-clip: text; color: transparent;">Python</span>
-                                                </li>
-                                            </ul>
+                            <!-- Tarjeta con enlace -->
+                            <a href="https://github.com/JosefinaOller/SoftwareLibre" target="_blank" class="card-link">
+                                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                    <div class="card-body p-5">
+                                        <div class="d-flex flex-column flex-md-row align-items-center">
+                                            <!-- Imagen -->
+                                            <div class="me-md-4 mb-4 mb-md-0" style="flex-shrink: 0;">
+                                                <img class="img-fluid w-75 w-md-100" src="https://dummyimage.com/300x400/343a40/6c757d" alt="Mardel Puerto" style="height: auto;" />
+                                            </div>
+                                            <!-- Contenido de texto -->
+                                            <div class="flex-grow-1">
+                                                <h2 class="fw-bolder mb-4 fs-5 fs-md-3">Clima bot - Telegram Chatbot</h2>
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <i class="bi bi-check-circle me-2" style="font-size: 1.2em; background: linear-gradient(to right, #6a11cb, #2575fc); -webkit-background-clip: text; color: transparent;"></i>
+                                                        <span style="font-size: 1.2rem; background: linear-gradient(to right, #6a11cb, #2575fc); -webkit-background-clip: text; color: transparent;">Python</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                             <!-- Repite para las otras tarjetas -->
                         </div>
                     </div>
