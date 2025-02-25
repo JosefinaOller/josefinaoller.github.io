@@ -4598,16 +4598,20 @@ textarea.form-control-lg {
   --bs-badge-font-weight: 700;
   --bs-badge-color: #fff;
   --bs-badge-border-radius: 0.375rem;
-  display: inline-block;
+  display: inline-flex; 
   padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   font-size: var(--bs-badge-font-size);
   font-weight: var(--bs-badge-font-weight);
   line-height: 1;
   color: var(--bs-badge-color);
   text-align: center;
-  white-space: nowrap;
+  white-space: normal; 
+  word-break: break-word; 
+  overflow-wrap: break-word; 
   vertical-align: baseline;
   border-radius: var(--bs-badge-border-radius);
+  align-items: center; 
+  justify-content: center; 
 }
 .badge:empty {
   display: none;
