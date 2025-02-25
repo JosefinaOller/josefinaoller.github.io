@@ -75,18 +75,18 @@
                         
                             <script>
                                 document.addEventListener("DOMContentLoaded", function () {
+                                    var isMobile = window.innerWidth <= 768; // Detecta si es un dispositivo móvil
+                                    var strings = isMobile
+                                        ? ["Software Developer", "Estudiante de Ingeniería Informática", "Programadora Java", "Desarrolladora Backend Java"] // Frases cortas para móviles
+                                        : ["Software Developer", "Estudiante avanzada de Ingeniería en Informática", "Programadora Java", "Desarrolladora Backend Java"]; // Frases completas para desktop
+
                                     var typed = new Typed('.typed', {
-                                        strings: [
-                                            "Software Developer", 
-                                            "Estudiante avanzada de Ingeniería en Informática",
-                                            "Programadora Java",
-                                            "Desarrolladora Backend Java" 
-                                        ], // Palabras que se mostrarán
-                                        typeSpeed: 50, // Velocidad de escritura (en milisegundos)
-                                        backSpeed: 30, // Velocidad de borrado (en milisegundos)
-                                        loop: true, // Repetir el ciclo infinitamente
-                                        showCursor: true, // Mostrar el cursor parpadeante
-                                        cursorChar: '|', // Carácter del cursor
+                                        strings: strings,
+                                        typeSpeed: 50,
+                                        backSpeed: 30,
+                                        loop: true,
+                                        showCursor: true,
+                                        cursorChar: '|',
                                     });
                                 });
                             </script>
